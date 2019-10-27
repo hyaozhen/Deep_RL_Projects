@@ -57,7 +57,7 @@ Whereas Monte Carlo (MC) prediction methods must wait until the end of an episod
 TD Control only uses a small time window of information. Instead of using the return Gt as the alternative estimate for updating q-table (needs to wait until an episode completed), Sum of the immediate reward Rt+1 and Q(St+1, At+1) of the current Q(St, At).
 We don't want to update q-table after an episode, but update Q(St, At) every time step t. Therefore, we use sum of the immediate reward Rt+1 and the existing Q(St+1, At+1) in the table to replace return Gt in MC function as alternative estimate. This allows us to update Q(St, At) at each time step t.
 
-![sarsa_3](images/Sarsa_3.png)
+![sarsa_3](images/sarsa_3.png)
 
 ### 1.10 Sarsamax (Q-Learning)
 ![sarsamax](images/sarsamax.png)
