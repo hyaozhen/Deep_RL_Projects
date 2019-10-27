@@ -142,5 +142,5 @@ Also, There are 6 possible actions, corresponding to moving North, East, South, 
 ### 2.4 Expected Sarsa Result
 ![expected_sarsa_result](images/expected_sarsa_result.png)
 
-### 2.5 Comparison of Result
+### 2.5 Comparison of Results
 ![comparison](images/comparison.png)
