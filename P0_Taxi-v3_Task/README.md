@@ -1,7 +1,7 @@
 # Reinforcement Learning and OpenAI Gym's Taxi-v3 Task
 ## Contents Overview
-* [Part 1. Reinforcement Learning](##Part-1-Reinforcement-Learning)
-* [Part 2. OpenAI Gym Taxi-v3 Task](##Part-2-OpenAI-Gym-Taxi-v3 Task)
+* [Part 1. Reinforcement Learning](##Part-1.-Reinforcement-Learning)
+* [Part 2. OpenAI Gym’s Taxi-v3 Task](##Part-2.-OpenAI-Gym’s-Taxi-v3-Task)
 
 ## Part 1. Reinforcement Learning
 
@@ -103,7 +103,7 @@ The differences between these algorithms are summarized below:
 ![GLIE](images/GLIE.png)
 
 
-## Part 2. OpenAI Gym Taxi-v3 Task
+## Part 2. OpenAI Gym’s Taxi-v3 Task
 ![Taxi-v3](https://github.com/vmelan/DRLND-udacity/raw/master/p0_taxi-v2/images/taxi_game_gif.gif)
 
 “**The Taxi Problem**” was originated from the subsection 3.1 of the paper “[Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition](https://github.com/openai/gym/blob/master/gym/envs/toy_text/taxi.py)” by Tom Dietterich
