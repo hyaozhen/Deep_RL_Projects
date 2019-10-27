@@ -1,9 +1,9 @@
 # Reinforcement Learning and OpenAI Gym's Taxi-v3 Task
 ## Contents Overview
-* [Part 1. Reinforcement Learning](##part-1-reinforcement-learning)
-* [Part 2. OpenAI Gym’s Taxi-v3 Task](##part-2-openAI-gyms-taxi-v3-task)
+* [Part 1. Reinforcement Learning](##Part-1-Reinforcement-Learning)
+* [Part 2. OpenAI Gym’s Taxi-v3 Task](##Part-2-OpenAI-Gyms-Taxi-v3-Task)
 
-## Part 1 Reinforcement Learning
+## Part 1. Reinforcement Learning
 
 ### 1.1 What is Reinforcement Learning?
 Reinforcement Learning (RL), like supervised learning and unsupervised learning, is a branch of machine learning. However, unlike the latter two, RL is not to make predictions or clustering, but to autonomously learn through the rewards and punishments based on the RL agent's interaction with the environment. This process is well illustrated in the figure below.
