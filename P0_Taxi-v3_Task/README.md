@@ -1,7 +1,7 @@
 # Reinforcement Learning and OpenAI Gym's Taxi-v3 Task
 ## Contents Overview
-* [Part 1. Reinforcement Learning](bear://x-callback-url/open-note?id=E7A2438E-0B08-48D4-B3D0-4622CE6E64D7-4582-00007C1EBD8E8D8E&header=Part%201.%20Reinforcement%20Learning)
-* [Part 2. OpenAI Gym’s Taxi-v3 Task](bear://x-callback-url/open-note?id=E7A2438E-0B08-48D4-B3D0-4622CE6E64D7-4582-00007C1EBD8E8D8E&header=Part%202.%20OpenAI%20Gym%E2%80%99s%20Taxi-v3%20Task)
+* [Part 1. Reinforcement Learning](##Part 1. Reinforcement Learning)
+* [Part 2. OpenAI Gym’s Taxi-v3 Task](##Part 2. OpenAI Gym’s Taxi-v3 Task)
 
 ## Part 1. Reinforcement Learning
 
@@ -76,12 +76,11 @@ Sarsamax first chooses A0, R1 and S1 through epsilon-greedy (Q), and then choose
 ![diff_4](images/diff_4.png)
 
 Q: What is the new value in the Q-table corresponding to the Q(s0, a0)?
+
 A: Q(s0, a0) <— 6 + 0.1(-1 + 9 - 6) = 6.2.
 
 ### 1.12 Expected Sarsa
 ![exp_sarsa_1](images/exp_sarsa_1.png)
-![exp_sarsa_2](images/exp_sarsa_1.png)
-![exp_sarsa_3](images/exp_sarsa_1.png)
 
 Q: What is the new value in the Q-table corresponding to the Q(s0, a0)?
 
