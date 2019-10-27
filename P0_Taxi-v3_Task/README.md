@@ -1,7 +1,7 @@
 # Reinforcement Learning and OpenAI Gym's Taxi-v3 Task
 ## Contents Overview
-* [Part 1. Reinforcement Learning](##Part-1.-Reinforcement-Learning)
-* [Part 2. OpenAI Gym’s Taxi-v3 Task](##Part-2.-OpenAI-Gym’s-Taxi-v3-Task)
+* [Part 1. Reinforcement Learning](##Part-1-Reinforcement-Learning)
+* [Part 2. OpenAI Gym’s Taxi-v3 Task](##Part-2-OpenAI-Gyms-Taxi-v3-Task)
 
 ## Part 1. Reinforcement Learning
 
