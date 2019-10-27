@@ -131,7 +131,7 @@ Also, There are 6 possible actions, corresponding to moving North, East, South, 
 * `monitor_ExpectedSarsa.py`: The interact function tests how well our Expected Sarsa agent learns from interaction with the environment.
 * `main.py`: Run this file in the terminal to check the performance of our agents.
 
-**I set both all seeds to be 505 for the reproducible results.**
+**I set all seeds to be 505 for the reproducible results.**
 
 ### 2.2 Sarsa Result
 ![sarsa_result](images/sarsa_result.png)
