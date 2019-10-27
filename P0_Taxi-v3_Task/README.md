@@ -6,7 +6,7 @@
 ## Part 1. Reinforcement Learning
 
 ### 1.1 What is Reinforcement Learning?
-Reinforcement Learning (RL), like supervised learning and unsupervised learning, is a branch of machine learning. However, unlike the latter two, RL is not to make predictions or clustering, but to autonomously learn through the rewards and punishments based on its interaction with the environment. This process is well illustrated in the figure below.
+Reinforcement Learning (RL), like supervised learning and unsupervised learning, is a branch of machine learning. However, unlike the latter two, RL is not to make predictions or clustering, but to autonomously learn through the rewards and punishments based on the RL agent's interaction with the environment. This process is well illustrated in the figure below.
 
 ![RL](https://video.udacity-data.com/topher/2017/September/59c29f47_screen-shot-2017-09-20-at-12.02.06-pm/screen-shot-2017-09-20-at-12.02.06-pm.png)
 
