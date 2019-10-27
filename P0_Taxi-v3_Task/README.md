@@ -58,8 +58,8 @@ TD Control only uses a small time window of information. Instead of using the re
 We don't want to update q-table after an episode, but update Q(St, At) every time step t. Therefore, we use sum of the immediate reward Rt+1 and the existing Q(St+1, At+1) in the table to replace return Gt in MC function as alternative estimate. This allows us to update Q(St, At) at each time step t.
 
 <p align="center">
-![sarsa_3](images/sarsa_3.png)
-<p>
+  <img src="images/sarsa_3.png">
+</p>
 
 ### 1.10 Sarsamax (Q-Learning)
 ![sarsamax](images/sarsamax.png)
