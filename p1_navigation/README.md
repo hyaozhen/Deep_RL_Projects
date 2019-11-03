@@ -6,7 +6,8 @@
 ## Contents Overview
 * Part 0. Project Description and Environment
 * Part 1. Deep Q-Learning
-* Part 2. Deep Q-Learning Improvements
+* Part 2. Results
+* Part 3. Deep Q-Learning Improvements
 
 ## Part 0. Project Description and Environment
 ### Introduction to the project
@@ -113,7 +114,12 @@ The DQN proposed in the paper by DeepMind adopts **Experience Replay** method. W
 
 ![dqn_algo](images/dqn_algo.png)
 
-## Deep Q-Learning Improvements
+## Part 2. Results
+![dueling](images/result_1.png)
+
+![dueling](images/result_2.png)
+
+## Part 3. Deep Q-Learning Improvements
 Several improvements to the original Deep Q-Learning algorithm have been suggested. Over the next several videos, we’ll look at three of the more prominent ones.
 
 ### Double DQN
