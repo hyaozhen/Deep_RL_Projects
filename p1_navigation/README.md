@@ -27,19 +27,19 @@ Follow the  [instructions in the DRLND GitHub repository](https://github.com/uda
 (/For Windows users/) The ML-Agents toolkit supports Windows 10. While it might be possible to run the ML-Agents toolkit using other versions of Windows, it has not been tested on other versions. Furthermore, the ML-Agents toolkit has not been tested on a Windows VM such as Bootcamp or Parallels.
 
 #### Step 2: Download the Unity Environment
-For this project, you will *not* need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
+For this project, you will **not** need to install Unity - this is because we have already built the environment for you, and you can download it from one of the links below. You need only select the environment that matches your operating system:
 * Linux:  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 * Mac OSX:  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 * Windows (32-bit):  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 * Windows (64-bit):  [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
 
-Then, place the file in the p1_navigation/ folder in the DRLND GitHub repository, and unzip (or decompress) the file.
-(/For Windows users/) Check out  [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64)  if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+Then, place the file in the p1_navigation* folder in the DRLND GitHub repository, and unzip (or decompress) the file.
+(*For Windows users*) Check out  [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64)  if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
-(/For AWS/) If you’d like to train the agent on AWS (and have not  [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) ), then please use  [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip)  to obtain the “headless” version of the environment. You will *not* be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (/To watch the agent, you should follow the instructions to/ [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) /, and then download the environment for the/*Linux*/operating system above./)
+(*For AWS*) If you’d like to train the agent on AWS (and have not  [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) ), then please use  [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip)  to obtain the “headless” version of the environment. You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent. (/To watch the agent, you should follow the instructions to* [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) *, and then download the environment for the***Linux***operating system above.*)
 
 #### Step 3: Explore the Environment
-After you have followed the instructions above, open Navigation.ipynb (located in the p1_navigation/ folder in the DRLND GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
+After you have followed the instructions above, open Navigation.ipynb (located in the p1_navigation* folder in the DRLND GitHub repository) and follow the instructions to learn how to use the Python API to control the agent.
 
 ### Files:
 * `Navigation.ipynb`: The Jupyter Notebook of my solution
@@ -71,18 +71,18 @@ For example, if we use the Q-Learning to play the Atari Breakout game and our co
 
 #### Value Function Approximation
 
-In stead of using a Q-table as the representation of Q(s, a), we can use a function /f/ to represent Q(s, a), i.e. f(w, s, a) = Q(s, a), where /f/ can be any linear or non-linear function and /w/ is its parameter.
+In stead of using a Q-table as the representation of Q(s, a), we can use a function *f* to represent Q(s, a), i.e. f(w, s, a) = Q(s, a), where *f* can be any linear or non-linear function and *w* is its parameter.
 
-However, since /f/ is an approximation, as we do not know exactly how the Q values distribute, we would say f(w, s, a) ≈ Q(s, a)
+However, since *f* is an approximation, as we do not know exactly how the Q values distribute, we would say f(w, s, a) ≈ Q(s, a)
 
-So, no matter how many dimensions the states /s/ has, the function approximation /f/ will map the states and actions spaces into a single Q-value or a vector of Q-values. Why the output may be a vector of Q-value? Because, if the states are in high-dimension space (e.g. pixels of images), but the actions are in low-dimension space (e.g. up, down, left, right, etc), we shall just reduce the dimensions of the states space. In other words, f(w, s) ≈ Q(s, a). We only take a state s as the input of /f/ and it will output a vector of Q-values of all actions (a1,…, an) in terms of the input state s (which could be an image): [Q(s, a1),Q(s, a2),Q(s, a3),…,Q(s, an)].
+So, no matter how many dimensions the states *s* has, the function approximation *f* will map the states and actions spaces into a single Q-value or a vector of Q-values. Why the output may be a vector of Q-value? Because, if the states are in high-dimension space (e.g. pixels of images), but the actions are in low-dimension space (e.g. up, down, left, right, etc), we shall just reduce the dimensions of the states space. In other words, f(w, s) ≈ Q(s, a). We only take a state s as the input of *f* and it will output a vector of Q-values of all actions (a1,…, an) in terms of the input state s (which could be an image): [Q(s, a1),Q(s, a2),Q(s, a3),…,Q(s, an)].
 
 #### Deep Neural Networks as a Function Approximator
 
 ![dqn](/)
 [Source](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
-We want to implement a deep neural network as a value function approximator /f/. For the example of Atari Breakout game above, the input are four sequential 84x84 grey scale images after processed. The neutral net involves two convolution layers, two full connection layers, and finally the output is a vector of Q values for each action. This is the basic structure of Deep Neural Networks, or DQN.
+We want to implement a deep neural network as a value function approximator *f*. For the example of Atari Breakout game above, the input are four sequential 84x84 grey scale images after processed. The neutral net involves two convolution layers, two full connection layers, and finally the output is a vector of Q values for each action. This is the basic structure of Deep Neural Networks, or DQN.
 
 #### Fixed Q-Targets
 So how we train this neutral net? What are the training samples? What is the loss function to optimize?
@@ -97,17 +97,17 @@ Since the training samples and their labels are defined, here comes the loss fun
 
 ![loss_function](images/loss_function.png)
 
-> Specifically, in Q-Learning, we *update a guess with a guess*, and this can potentially lead to harmful correlations. To avoid this, we can update the parameters /w/ in the network Q to better approximate the action value corresponding to state *S* and action *A* with the following update rule:
-> ![update_increment](images/update_increment.png)
-> where w^- (aka w_t-1) are the weights of a separate target network that are not changed during the learning step, and *(S,A,R,S’)* is an experience tuple.
+> Specifically, in Q-Learning, we **update a guess with a guess**, and this can potentially lead to harmful correlations. To avoid this, we can update the parameters *w* in the network Q to better approximate the action value corresponding to state **S** and action **A** with the following update rule:
+> ![update_increment](images*update_increment.png)
+> where w^- (aka w_t-1) are the weights of a separate target network that are not changed during the learning step, and **(S,A,R,S’)** is an experience tuple.
 
 #### Experience Replay
 According to the sample size of each update, there are two update methods: Incremental Methods and Batch Methods (Experience Replay).
-The DQN proposed in the paper by DeepMind adopts *Experience Replay* method. When training the neural network, we assume that the samples are independently and identically distributed. However, there is a correlation between the samples collected through reinforcement learning. Using these data for sequential training will lead to the instability of the neural network. Experience Replay can break the correlation between sample data. In other words,
+The DQN proposed in the paper by DeepMind adopts **Experience Replay** method. When training the neural network, we assume that the samples are independently and identically distributed. However, there is a correlation between the samples collected through reinforcement learning. Using these data for sequential training will lead to the instability of the neural network. Experience Replay can break the correlation between sample data. In other words,
 
-> when the agent interacts with the environment, the sequence of experience tuples can be highly correlated. The naive Q-learning algorithm that learns from each of these experience tuples in sequential order runs the risk of getting swayed by the effects of this correlation. By instead keeping track of a *replay buffer* and using *experience replay* to sample from the buffer at random, we can prevent action values from oscillating or diverging catastrophically.
-> The *replay buffer* contains a collection of experience tuples *(S,A,R,S’)*. The tuples are gradually added to the buffer as we are interacting with the environment.
-> The act of sampling a small batch of tuples from the replay buffer in order to learn is known as *experience replay*. In addition to breaking harmful correlations, experience replay allows us to learn more from individual tuples multiple times, recall rare occurrences, and in general make better use of our experience.
+> when the agent interacts with the environment, the sequence of experience tuples can be highly correlated. The naive Q-learning algorithm that learns from each of these experience tuples in sequential order runs the risk of getting swayed by the effects of this correlation. By instead keeping track of a **replay buffer** and using **experience replay** to sample from the buffer at random, we can prevent action values from oscillating or diverging catastrophically.
+> The **replay buffer** contains a collection of experience tuples **(S,A,R,S’)**. The tuples are gradually added to the buffer as we are interacting with the environment.
+> The act of sampling a small batch of tuples from the replay buffer in order to learn is known as **experience replay**. In addition to breaking harmful correlations, experience replay allows us to learn more from individual tuples multiple times, recall rare occurrences, and in general make better use of our experience.
 
 #### Deep Q-Learning Algorithm
 
@@ -122,11 +122,11 @@ It uses the current Q network to select the action and the older (target) Q netw
 ![double_dqn](images/double_dqn.png)
 
 ### Prioritized Experience Replay
-Deep Q-Learning samples experience transitions /uniformly/ from a replay memory.  [Prioritized experienced replay](https://arxiv.org/abs/1511.05952)  is based on the idea that the agent can learn more effectively from some transitions than from others, and the more important transitions should be sampled with higher probability.
+Deep Q-Learning samples experience transitions *uniformly* from a replay memory.  [Prioritized experienced replay](https://arxiv.org/abs/1511.05952)  is based on the idea that the agent can learn more effectively from some transitions than from others, and the more important transitions should be sampled with higher probability.
 ![prioritized](images/prioritized.png)
 
 ### Dueling DQN
-Currently, in order to determine which states are (or are not) valuable, we have to estimate the corresponding action values /for each action/. However, by replacing the traditional Deep Q-Network (DQN) architecture with a  [dueling architecture](https://arxiv.org/abs/1511.06581) , we can assess the value of each state, without having to learn the effect of each action.
+Currently, in order to determine which states are (or are not) valuable, we have to estimate the corresponding action values *for each action*. However, by replacing the traditional Deep Q-Network (DQN) architecture with a  [dueling architecture](https://arxiv.org/abs/1511.06581) , we can assess the value of each state, without having to learn the effect of each action.
 
 ![dueling](images/dueling.png)
 
