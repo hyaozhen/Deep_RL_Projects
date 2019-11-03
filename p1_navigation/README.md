@@ -98,7 +98,7 @@ Since the training samples and their labels are defined, here comes the loss fun
 ![loss_function](images/loss_function.png)
 
 > Specifically, in Q-Learning, we **update a guess with a guess**, and this can potentially lead to harmful correlations. To avoid this, we can update the parameters *w* in the network Q to better approximate the action value corresponding to state **S** and action **A** with the following update rule:
-> ![update_increment](images*update_increment.png)
+> ![update_increment](images/update_increment.png)
 > where w^- (aka w_t-1) are the weights of a separate target network that are not changed during the learning step, and **(S,A,R,S’)** is an experience tuple.
 
 #### Experience Replay
