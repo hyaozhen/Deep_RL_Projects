@@ -79,7 +79,7 @@ So, no matter how many dimensions the states *s* has, the function approximation
 
 #### Deep Neural Networks as a Function Approximator
 
-![dqn](/)
+![dqn](images/dqn.png)
 [Source](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
 We want to implement a deep neural network as a value function approximator *f*. For the example of Atari Breakout game above, the input are four sequential 84x84 grey scale images after processed. The neutral net involves two convolution layers, two full connection layers, and finally the output is a vector of Q values for each action. This is the basic structure of Deep Neural Networks, or DQN.
