@@ -1,6 +1,6 @@
 # Value-Based Methods: DQN and Its Improvements
 | Before Training | Trained |
-| --- | ----- |
+| ----- | ----- |
 | ![random](images/random.gif) | ![trained](images/trained.gif) |
 
 ## Contents Overview
