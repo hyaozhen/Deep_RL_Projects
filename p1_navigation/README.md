@@ -64,7 +64,7 @@ Then, we follow the Q-Learning algorithm to update the Q-table to have the optim
 ### 1.2 Curse of Dimension and the Value Function Approximation
 
 #### Curse of Dimension
-We mentioned that in Q-Learning we can have a Q-table to store the values correspond to (s, a) pairs, as a representation of the optimal function Q(s, a). However, there is a problem with this Q-table representation. What if there are thousands or even millions of states? Can we just store them in a Q-table and let out computers to figure out? Probably not a good idea :)
+We mentioned that in Q-Learning we can have a Q-table to store the values correspond to (s, a) pairs, as a representation of the optimal function Q(s, a). However, there is a problem with this Q-table representation. What if there are thousands or even millions of states? Can we just store them in a Q-table and let our computers to figure out? Probably not a good idea :)
 
 ![atari](https://i.ytimg.com/vi/TmPfTpjtdgg/maxresdefault.jpg)
 
